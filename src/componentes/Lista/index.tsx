@@ -11,8 +11,7 @@ function Lista({ tarefas }: { tarefas: ITarefa[] }) {
                 {tarefas.map((item, index) => (
                     <Item
                         key={index}
-                        tarefa={item.tarefa}
-                        tempo={item.tempo}
+                        {...item}
                     />
                 ))}
 
